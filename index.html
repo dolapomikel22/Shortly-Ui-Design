@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .w-frame {
+          max-width: 1279px;
+          width: min(95%, 1279px);
+          margin-inline: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav
+        class="flex items-center justify-between w-frame py-8 text-slate-600"
+      >
+        <div class="flex items-center gap-8">
+          <a href="">
+            <img src="./images/logo.svg" alt="Logo" />
+          </a>
+
+          <ul class="flex gap-6">
+            <li>
+              <a class="hover:text-black" href="">Features</a>
+            </li>
+            <li>
+              <a class="hover:text-black" href="">Pricing</a>
+            </li>
+            <li>
+              <a class="hover:text-black" href="">Resources</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-4 items-center">
+          <a href="/login"> Login </a>
+          <a
+            class="bg-teal-500 grid place-content-center font-semibold rounded-[1.4rem] py-3 px-5 text-white"
+            href="/signup"
+          >
+            Sign Up
+          </a>
+        </div>
+      </nav>
+
+      <section class="overflow-hidden">
+        <div class="relative w-frame h-[70vh] flex items-center">
+          <div class="max-w-[50%]">
+            <h3 class="text-[4rem] leading-[4.2rem] font-bold">
+              More than just shorter links
+            </h3>
+            <p class="text-slate-600 text-2xl mb-8">
+              Build your brand&apos;s recognition and get detailed insights on
+              how your links are performing.
+            </p>
+            <a
+              class="bg-teal-500 grid place-content-center font-semibold rounded-[1.4rem] py-3 px-6 text-2xl text-white w-fit"
+              href="/"
+            >
+              Get Started
+            </a>
+          </div>
+
+          <div class="absolute -right-[10%] h-full w-[50%]">
+            <img
+              class="h-full w-full object-contain"
+              src="./images/illustration-working.svg"
+              alt="Illustration"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="relative flex items-center flex-col">
+        <div class="h-[10rem] w-full bg-white"></div>
+        <div class="h-[10rem] w-full bg-[#bfbfbf]"></div>
+        <div
+          class="w-frame absolute top-[25%] h-[12rem] rounded-xl p-[4rem] bg-[#35323e] bg-[url('./images/bg-shorten-desktop.svg')] bg-center bg-no-repeat bg-cover"
+        >
+          <div class="flex gap-4 items-center">
+            <input
+              placeholder="Shorten a link here..."
+              class="bg-white text-2xl w-full h-16 p-4 rounded-xl text-gray-500 ring-0 focus:outline focus:outline-teal-500"
+              type="text"
+            />
+            <button
+              class="w-[16rem] text-2xl rounded-xl font-semibold bg-teal-500 text-white h-16 grid place-content-center"
+            >
+              Shorten It!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#bfbfbf] min-h-[90vh]">
+        <div class="w-frame space-y-20">
+          <div class="flex justify-center">
+            <div class="w-[40%]">
+              <h3 class="text-3xl text-center font-bold mb-3">
+                Advanced Statistics
+              </h3>
+
+              <p class="text-center text-slate-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                eius ab aperiam amet ipsum cupiditate? Lorem ipsum dolor sit
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="relative bg-white w-full rounded-lg px-6 pt-14 pb-8 after:h-[.7rem]  after:flex after:w-[2rem] after:bg-teal-500 after:absolute after:-right-[2rem] after:top-[50%]">
+              <div
+                class=" absolute -top-[15%] w-[5rem] h-[5rem] rounded-full bg-[#35323e] grid place-content-center"
+              >
+                <img src="./images/icon-brand-recognition.svg" alt="Brand " />
+              </div>
+
+              <h5 class="font-bold mb-4">Brand Recognition</h5>
+              <p class="text-slate-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem consequatur aliquam corrupti earum fuga impedit atque
+                sequi distinctio magnam alias porro veritatis perspiciatis et
+              </p>
+            </div>
+            <div class="relative translate-y-[3rem] bg-white w-full rounded-lg px-6 pt-14 pb-8 after:h-[.7rem]  after:flex after:w-[2rem] after:bg-teal-500 after:absolute after:-right-[2rem] after:top-[50%]">
+              <div
+                class=" absolute -top-[15%] w-[5rem] h-[5rem] rounded-full bg-[#35323e] grid place-content-center"
+              >
+                <img src="./images/icon-brand-recognition.svg" alt="Brand " />
+              </div>
+
+              <h5 class="font-bold mb-4">Brand Recognition</h5>
+              <p class="text-slate-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem consequatur aliquam corrupti earum fuga impedit atque
+                sequi distinctio magnam alias porro veritatis perspiciatis et
+              </p>
+            </div>
+            <div class="relative translate-y-[6rem] bg-white w-full rounded-lg px-6 pt-14 pb-8">
+              <div
+                class=" absolute -top-[15%] w-[5rem] h-[5rem] rounded-full bg-[#35323e] grid place-content-center"
+              >
+                <img src="./images/icon-brand-recognition.svg" alt="Brand " />
+              </div>
+
+              <h5 class="font-bold mb-4">Brand Recognition</h5>
+              <p class="text-slate-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem consequatur aliquam corrupti earum fuga impedit atque
+                sequi distinctio magnam alias porro veritatis perspiciatis et
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
